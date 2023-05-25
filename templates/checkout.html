@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<!-- Head Section content -->
+<head>
+    <meta charset="UTF-8">
+ 
+    <!-- Page title -->
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+ 
+<!-- Body Section content -->
+<body>
+ 
+    <!-- Used to display heading content -->
+   <div class="subject">Checkout Check<br> Check Check</div>
+   <div class='checkout'>
+        <div class="order">
+            <h2>Checkout Demo</h2>
+            <h5>Order #00001</h5>
+            <ul class="order-list">
+                <li><img src="" alt="product1"></li>
+                <li><img src="" alt="product2"></li>
+                <li><img src="" alt="product3"></li>
+            </ul>
+            <h5>Shipping</h5><h4>R90</h4>
+            <h5 class="total">Total</h5><h1>R1650</h1>
+
+          
+            <form action="https://sandbox.payfast.co.za​/eng/process" method="post">
+                <input type="hidden" name="merchant_id" value="10000100">
+                <input type="hidden" name="merchant_key" value="46f0cd694581a">
+                <input type="hidden" name="return_url" value="https://a546-146-141-14-137.ngrok-free.app/return.html">
+                <input type="hidden" name="cancel_url" value="https://a546-146-141-14-137.ngrok-free.app/cancel.html">
+                <input type="hidden" name="notify_url" value="https://a546-146-141-14-137.ngrok-free.app/notify.html">
+                
+                <input type="hidden" name="amount" value="1650">
+                <input type="hidden" name="item_name" value="Test Product">
+                
+                <input type="hidden" name="name_first" value="John">
+                <input type="hidden" name="name_last" value="Doe">
+                <input type="hidden" name="email_address" value="john@doe.com">
+                <input type="hidden" name="cell_number" value="0823456789">
+                <input type="submit" class="button-cta" value="PAY NOW">
+
+                <input type="hidden" name="m_payment_id" value="01AB">
+            
+                
+                <input type="hidden" name="item_description" value="A test product">
+                
+                <input type="hidden" name="custom_str1" value="Extra order information">
+
+                <input type="hidden" name="email_confirmation" value="1">
+                <input type="hidden" name="confirmation_address" value="john@doe.com">
+                <input type="hidden" name="payment_method" value="cc"> 
+
+                
+             </form>
+
+
+        </div>
+
+   </div>
+    
+ 
+    <!-- Used to display paragrapg content -->
+   
+</body>
+ 
+</html>
